@@ -5,7 +5,7 @@ def simulate(size, shard_size):
     last = 0.0
 
     while last < len(size):
-        out.append(size[int(last):int(last + avg)])
+        out.append(size[int(last):int(last + avg-1)])
         last += avg
 
     return out
